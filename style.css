@@ -7,6 +7,9 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
+    background-color: #faf3dd; /* Replace with your desired color */
+    margin: 0;
+    padding: 0;
 }
 html{
     scroll-behavior: smooth;
