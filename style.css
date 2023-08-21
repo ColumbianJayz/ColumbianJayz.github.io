@@ -82,7 +82,7 @@ a:hover{
     position: absolute;
     top: 100%;
     right: 0; 
-    background-color: transparent;
+    background-color: #faf3dd;
     width:m fit-content;
     max-height: 0;
     overflow: hidden;
