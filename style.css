@@ -22,6 +22,15 @@ html{
 p{
     color : #d9d9d9; /* This is the */
 }
+d{
+    color: black;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+e{
+    color: #d9d9d9;
+}
 /* TRANSITION*/
 
 a, .btn{
@@ -272,7 +281,7 @@ section{
     position: relative;
 }
 .experience-sub-title{
-    color: #d9d9d9;
+    color: black;
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 2rem;
