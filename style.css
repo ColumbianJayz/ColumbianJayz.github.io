@@ -77,6 +77,7 @@ a:hover{
 .hamburger-menu{
     position: relative;
     display: inline-block;
+    
 }
 .hamburger-icon{
     display: flex;
@@ -97,11 +98,13 @@ a:hover{
     position: absolute;
     top: 100%;
     right: 0; 
-    background-color: #faf3dd;
+    background-color: #ac9c8d;
     width:m fit-content;
     max-height: 0;
     overflow: hidden;
     transition: all 0.3 ease-in-out;
+    border-radius: 10px;
+    text-decoration: underline;
 }
 .menu-links a{
     display: block;
