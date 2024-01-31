@@ -104,7 +104,6 @@ a:hover{
     overflow: hidden;
     transition: all 0.3 ease-in-out;
     border-radius: 10px;
-    text-decoration: underline;
 }
 .menu-links a{
     display: block;
