@@ -330,6 +330,10 @@ article .icon{
     color: black;
     border-color: white;
 }
+.project-tech{
+    padding: 30px;
+    font-size: 20px;
+}
 /* CONTACT */
 
 #contact{
