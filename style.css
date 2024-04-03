@@ -164,7 +164,6 @@ section{
 
 }
 
-
 .section__text{
     align-self: center;
     text-align: center;
@@ -351,7 +350,7 @@ article .icon{
     justify-content: center;
     flex-direction: column;
     height: 70vh;
-    margin-top: 200px;
+    margin-top: 400px;
 }
 .contact-info-upper-container{
     display: flex;
