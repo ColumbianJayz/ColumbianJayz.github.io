@@ -331,7 +331,13 @@ article .icon{
 }
 .project-img{
     border-radius: 2rem;
-    width: 70%;}
+    width: 70%;
+}
+.project-img-2{
+    padding-top: 100px;
+    padding-bottom: 60px;
+    width: 90%;
+}
 .project-title{
     margin: 1rem;
     color: black;
