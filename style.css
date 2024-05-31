@@ -287,6 +287,9 @@ section{
     text-align: center;
     padding: 10px;
 }
+.aboutMeDes{
+    padding-bottom: 10px;
+}
 /* EXPERIENCE */
 #experience {
     position: relative;
