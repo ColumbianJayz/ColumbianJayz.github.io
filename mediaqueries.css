@@ -54,6 +54,7 @@
     footer nav{
         height: fit-content;
         margin-bottom: 2rem;
+        
     }
     .about-containers, .contact-info-upper-container, .btn-container{
         flex-wrap: wrap;
@@ -77,7 +78,7 @@
     }
     .section__pic-container{
         width: auto;
-        height: 46vw;
+        height: 79vw;
         justify-content: center;
     }
     .section__text__p2{
