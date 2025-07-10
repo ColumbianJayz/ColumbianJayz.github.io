@@ -1,3 +1,13 @@
+/* HERO IMAGE RESPONSIVE STYLES */
+.hero-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
 /* SKILLS/EXPERIENCE CARDS RESPONSIVE LAYOUT */
 .skills-container {
   display: flex;
@@ -194,6 +204,7 @@ section {
 .section__text p{
     font-weight:  600;
 }
+/* Profile section heading and subheading styles */
 .section__text__p1{
     text-align: center;
 }
@@ -563,41 +574,228 @@ img {
 
 /* Base container */
 .container {
-  width: 90%;
+  width: 100%;
   max-width: 1200px;
   margin: auto;
 }
 
 /* Responsive layout adjustments */
 @media (max-width: 768px) {
-  .experience-section,
-  .projects-section,
-  .contact-box,
-  .contact-info-upper-container {
-    flex-direction: column;
-    padding: 1rem;
-    align-items: center;
+  .hero-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .header-container {
+    padding: 0 10px;
     text-align: center;
   }
 
-  .experience-card,
-  .project-card {
+
+  /* Make just the Jason Montoya logo text larger on mobile */
+  .logo-title.logo {
+    font-size: 2rem;
+    font-weight: 600;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  .container,
+  .card,
+  .experience-section,
+  .projects-section,
+  .interests-section,
+  .contact-section {
     width: 100%;
+    max-width: 100%;
+    padding: 1rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills-list,
+  .project-description,
+  .interests-text {
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  img,
+  iframe {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .interests-text {
+    writing-mode: horizontal-tb;
+    transform: none;
+  }
+
+  .button {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Remove fixed heights and make sections fluid */
+  #profile,
+  .section__pic-container,
+  .about-pic {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: unset;
+  }
+
+  section {
+    padding: 2rem 0.5rem;
+  }
+
+  .about-containers,
+  .section-container {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .details-container {
     margin-bottom: 1rem;
   }
 
-  .logo-title {
-    font-size: 1.8rem;
-    text-align: center;
-  }
-
-  .contact-item {
+  .experience-details-container,
+  .about-details-container {
     flex-direction: column;
     align-items: center;
   }
 
+  .article-container {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    width: 100%;
+  }
+
+  .project-img,
+  .project-img-2,
+  .bichota {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    padding-top: 0 !important;
+  }
+
+  .project-title {
+    padding-top: 0;
+    font-size: 1.2rem;
+  }
+
+  .project-tech {
+    font-size: 1rem;
+    padding: 0;
+  }
+
+  #contact {
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .contact-box,
   .contact-info-upper-container {
-    padding: 1rem 1.5rem;
-    max-width: 90%;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .contact-info-upper-container a {
+    margin: 0.5rem 0;
+  }
+
+  .logo-title {
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  nav,
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.1rem;
   }
 }
+/* PROFILE CONTAINER MOBILE FIX */
+@media (max-width: 768px) {
+  /* Center the profile section for mobile */
+  #profile,
+  .profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto !important;
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  .profile-container img,
+  #profile img {
+    max-width: 60%;
+    height: auto;
+  }
+
+  .btn-container,
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 2rem; /* smaller font for "Jason" */
+  }
+
+  .section__text__p1 {
+    font-size: 1rem; /* adjust greeting text */
+  }
+
+  .section__text__p2 {
+    font-size: 1.1rem; /* adjust subtitle text */
+    word-break: break-word; /* allows long words to wrap */
+  }
+}
+
+@media (max-width: 768px) {
+  .section__text__p2 {
+    display: block;
+    width: 86%;
+    text-align: center;
+    margin-top: 0.5rem;
+    margin: 0 auto;
+    padding: 15px;
+  }
+}
+  .hamburger {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    transform: scale(0.8); /* make it smaller */
+  }
+
+  .nav-container {
+    position: relative;
+  }
