@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Jason Montoya</title>
+    <link rel="icon" href="./assets/favicon5.png" type="image/png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 
 <body>
     <nav id="desktop-nav">
-        <div class="logo"> Jason Montoya</div>
+        <div class="logo-title logo">Jason Montoya</div>
         <div>
             <ul class="nav-links">
                 <li><a href= "#about">About</a></li>
@@ -21,7 +22,7 @@
         </div>
     </nav>
     <nav id="hamburger-nav">
-        <div class="logo"> Jason Montoya</div>
+        <div class="logo-title logo">Jason Montoya</div>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
@@ -39,14 +40,24 @@
     </nav>
     <section id="profile">
         <div class="section__pic-container">
-            <img src="./assets/jason.png" alt="Jason profile picture">
+            <img src="./assets/skylineJayz.JPG" alt="Jason profile picture" class="firstPic">
         </div>
         <div class="section__text">
-            <p class="secton__text__p1"> Hi there! I'm </p>
-            <h1 class="title">Jason Montoya</h1>
-            <p class="section__text__p2">Fourth Year Computer Science Student </p>
+            <p class="secton__text__p1"> Hi there! I'm</p>
+            <h1 class="title">Jason</h1>
+            <p class="section__text__p2">Incoming Software Engineer @ 
+              <a href="https://healthfirst.org/about-us" class="healthFirst-title-text">HealthFirst</a>
+              <svg class="healhfirst-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256">
+                <g transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+                  <path d="M 30.648 90 h -4.666 c -0.276 0 -0.54 -0.114 -0.729 -0.315 c -0.189 -0.202 -0.287 -0.473 -0.269 -0.748 c 1.473 -23.129 7.78 -37.706 23.516 -52.984 c -11.987 6.803 -23.657 18.781 -25.661 35.247 c -0.051 0.42 -0.361 0.763 -0.774 0.854 c -0.414 0.094 -0.84 -0.086 -1.065 -0.443 c -8.808 -14.02 -8.505 -26.712 0.952 -39.944 c 5.454 -7.272 13.28 -11.279 20.185 -14.815 c 8.346 -4.273 15.554 -7.964 17.098 -16.04 c 0.078 -0.407 0.398 -0.723 0.807 -0.796 c 0.407 -0.073 0.818 0.113 1.032 0.467 c 10.854 17.977 19.798 35.828 10.159 56.542 c -7.694 13.752 -20.459 20.112 -37.994 18.96 c -1.01 4.324 -1.531 8.595 -1.59 13.028 C 31.641 89.561 31.195 90 30.648 90 z"
+                  fill="##008000" />
+                </g>
+              </svg>
+            </p>
+            <p class="section__text__p2">Recent <a href="https://www.cs.columbia.edu/" class ="columbia-title-text">Columbia</a> Graduate</p>
+            <!-- <p class="section__text__p2">Recent Columbia Graduate</p> -->
             <div class="btn-container">
-                <button class="btn  btn-color-2" onclick="window.open('./assets/JasonSpring2025.pdf')"
+                <button class="btn  btn-color-2" onclick="window.open('./assets/JasonMontoyaJuly.pdf')"
                 >
                 Download CV
             </button>
@@ -56,9 +67,9 @@
             </button>
             </div>
             <div id="social-container">
-                <img src="./assets/linkedin-app-white-icon.png" alt="My LinkedIn Profile"
+                <img src="./assets/icons8-linkedin-48 (1).png" alt="My LinkedIn Profile"
                 class="icon" onclick="location.href='https://linkedin.com/in/jasonmontoyacu'"/>
-                <img src="./assets/kisspng-github-pages-logo-repository-fork-github-logo-1-magentys-5b69de71b51265.8586076615336648817417.png" alt="My GitHub Profile"
+                <img src="./assets/icons8-github-32.png" alt="My GitHub Profile"
                 class="icon" onclick="location.href='https://github.com/ColumbianJayz'"/>
             </div>
         </div>
@@ -69,7 +80,7 @@
         <div class="section-container">
             <div class="section__pic-container">
                 <img
-                src="./assets/school.jpg" alt="Profile Picture"
+                src="./assets/gradJayz.jpeg" alt="Profile Picture"
                 class="about-pic"
                 />
             </div>
@@ -81,7 +92,9 @@
                         class="icon"
                         />
                     <h3>Experience</h3>
-                    <p> Internships in both Information Technology and Software Engineering</p>
+                    <p>Incoming Software Engineer @ Healthfirst 4x Internships across Software & IT</p>
+                    <br>
+                      <p>Proven experience in agile development, enterprise systems, and user-first engineering.</p>
                     </div>
                     <div class="details-container">
                         <img src="./assets/education.png" 
@@ -93,7 +106,10 @@
                         alt="Education icon" 
                         class="icon"
                         />
-                    <p>B.A. Computer Science  in 2025</p>
+                        <br>
+                    <p>B.A. in Computer Science — Class of 2025</p>
+                    <br>
+                      <p>Specialized in AI, UI/UX, and full-stack development</p>
                     </div>
                 </div>
                 <div class="text-container-text">
@@ -101,8 +117,10 @@
                         alt="Education icon" 
                         class="icon"
                         />
-                  
-                    <p class="aboutMeDes">I am currently a senior studying computer science with an interest in software engineering, Human-Computer interaction, operating systems, and user interface design.</p>
+                        <h3>Interests</h3>
+                    <p class="aboutMeDes">Passionate about building thoughtful, scalable software with a focus on AI, Human-Computer Interaction, and elegant UI design.
+                      I enjoy transforming complex ideas into intuitive digital experiences.
+                    </p>
                 </div>
             </div>
         </div>
@@ -115,183 +133,77 @@
         <div class="experience-details-container">
           <div class="about-containers">
             <div class="details-container">
-              <h2 class="experience-sub-title">Web Development</h2>
+              <h2 class="experience-sub-title">Frontend & Web Technologies</h2>
               <div class="article-container">
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>HTML</h3>
-                   
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>CSS</h3>
-                
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>JavaScript</h3>
-                   
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>JQuery</h3>
-                    
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Bootstrap</h3>
-          
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Flask</h3>
-                  
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>React</h3>
-                  
-                  </div>
-                </article>
+                <article><img src="./assets/checkmark.png" class="icon"/><h3>HTML</h3></article>
+                <article><img src="./assets/checkmark.png" class="icon"/><h3>CSS</h3></article>
+                <article><img src="./assets/checkmark.png" class="icon"/><h3>JavaScript</h3></article>
+                <article><img src="./assets/checkmark.png" class="icon"/><h3>JQuery</h3></article>
+                <article><img src="./assets/checkmark.png" class="icon"/><h3>Bootstrap</h3></article>
+                <article><img src="./assets/checkmark.png" class="icon"/><h3>React</h3></article>
+                <article><img src="./assets/checkmark.png" class="icon"/><h3>TypeScript</h3></article>
+                <article><img src="./assets/checkmark.png" class="icon"/><h3>Tailwind CSS</h3></article>
+                <article><img src="./assets/checkmark.png" class="icon"/><h3>Flask</h3></article>
               </div>
             </div>
             <div class="details-container">
-              <h2 class="experience-sub-title">Back End Languages and More</h2>
+              <h2 class="experience-sub-title">Programming Languages & Tools</h2>
               <div class="article-container">
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Java</h3>
-               
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Python</h3>
-                
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>C</h3>
-              
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Git</h3>
-          
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Bash</h3>
-               
-                  </div>
-                </article>
+                <article><img src="./assets/checkmark.png" class="icon"/><h3>Java</h3></article>
+                <article><img src="./assets/checkmark.png" class="icon"/><h3>Python</h3></article>
+                <article><img src="./assets/checkmark.png" class="icon"/><h3>C</h3></article>
+                <article><img src="./assets/checkmark.png" class="icon"/><h3>Git</h3></article>
+                <article><img src="./assets/checkmark.png" class="icon"/><h3>Bash</h3></article>
+                <article><img src="./assets/checkmark.png" class="icon"/><h3>Maven</h3></article>
+                <article><img src="./assets/checkmark.png" class="icon"/><h3>JaCoCo</h3></article>
+                <article><img src="./assets/checkmark.png" class="icon"/><h3>Git CI/CD</h3></article>
+                <article><img src="./assets/checkmark.png" class="icon"/><h3>GCP</h3></article>
+                <article><img src="./assets/checkmark.png" class="icon"/><h3>IntelliJ</h3></article>
+                <article><img src="./assets/checkmark.png" class="icon"/><h3>VS Code</h3></article>
+                <article><img src="./assets/checkmark.png" class="icon"/><h3>Postman</h3></article>
+                <article><img src="./assets/checkmark.png" class="icon"/><h3>Jira</h3></article>
+                <article><img src="./assets/checkmark.png" class="icon"/><h3>XCode</h3></article>
+                <article><img src="./assets/checkmark.png" class="icon"/><h3>SonarQube</h3></article>
+                <article><img src="./assets/checkmark.png" class="icon"/><h3>DataGrip</h3></article>
               </div>
             </div>
             <div class="details-container">
-              <h2 class="experience-sub-title">Professional Experience</h2>
+              <h2 class="experience-sub-title">Work Experience</h2>
               <div class="article-container">
-                <article>
+                <article class="experience-card">
                   <div>
-                    <d>
+                    <img
+                      src="./assets/columbia-build-lab-logo.png"
+                      alt="Experience icon"
+                      class="icon"
+                      />
+                    <br>
+                    <h4>Lead Software Engineer 
+                      Intern
+                    </h4>
+                    <p>January 2025 - May 2025</p>
+                  </div>
+                </article>
+                <article class="experience-card">
+                  <div>
                       <img
                     src="./assets/national.png"
                     alt="Experience icon"
                     class="icon"
                   />
-                    </d>
-                    <d>Software Engineer Intern</d>
-                    <e>June 2024 - August 2024</e>
+                    <h4>Software Engineer Intern</h4>
+                    <p>June 2024 - August 2024</p>
                   </div>
                 </article>
-                <article>
+                <article class="experience-card">
                   <div>
-                    <d><img
+                    <img
                       src="./assets/CUNY_Text_logo.png"
                       alt="Experience icon"
                       class="icon"
-                    /></d>
-                    <d>Information Technology Assistant<br></d>
-                    <e>July 2022 - Present</e>
-                  </div>
-                </article>
-                <article>
-                  <div>
-                    <d><img
-                      src="./assets/CUNY_Text_logo.png"
-                      alt="Experience icon"
-                      class="icon"
-                    /></d>
-                    <d>Information Technology Intern<br></d>
-                    <e>May 2022 - June 2022</e>
+                    />
+                    <h4>Information Technology Assistant</h4>
+                    <p>July 2022 - Present</p>
                   </div>
                 </article>
                 
@@ -395,18 +307,12 @@
         <p class="section__text__p1">Get in Touch</p>
         <h1 class="title">Contact Me</h1>
         <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/email.png" 
-                alt="Email icon" 
-                class="icon contact-icon email-icon"
-                />
-                <p><a href="mailto:jam2509@columbia.edu">Email</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"
-                />
-                <p><a href="https://linkedin.com/in/jasonmontoyacu">LinkedIn</a></p>
-            </div>
+          <a href="mailto:jam2509@columbia.edu" class="contact-item">
+            <i class="fas fa-envelope"></i> Email
+          </a>
+          <a href="https://linkedin.com/in/jasonmontoyacu" class="contact-item">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
         </div>
     </section>
     <footer>
@@ -420,7 +326,7 @@
                 </ul>
             </div>
         </nav>
-        <p>Copyright &#169; 2024 Jason Montoya. All Rights Reserved.</p>
+        <p>Copyright &#169; 2025 Jason Montoya. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
 </body>
