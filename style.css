@@ -185,7 +185,7 @@ section {
 }
 .firstPic {
   width: 100%;
-  max-width: 350px;
+  max-width: 300px;
   border-radius: 0px;
   object-fit: cover;
   box-shadow: none;
@@ -229,7 +229,7 @@ section {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
-    gap: 1rem;
+   
 }
 #social-container .icon {
   width: 36px;
@@ -649,7 +649,7 @@ img {
   #profile,
   .section__pic-container,
   .about-pic {
-    width: 100% !important;
+    /* width: 100% !important; */
     max-width: 100% !important;
     height: auto !important;
     min-height: unset;
@@ -787,6 +787,37 @@ img {
     margin: 0 auto;
     padding: 15px;
   }
+
+  @media (max-width: 768px) {
+    #social-container {
+      display: flex;
+      justify-content: center; /* or flex-start if you want them aligned left */
+      align-items: center;
+      gap: 4px; /* reduce spacing */
+      flex-wrap: nowrap; /* prevent wrapping */
+      margin-top: 1rem;
+    }
+  
+    #social-container .icon {
+      display: inline-block;
+      width: 32px; /* shrink a bit if needed */
+      height: 32px;
+      padding: 6px; /* smaller padding on mobile */
+      border-radius: 50%;
+      background-color: #1A1A1A;
+      transition: all 0.3s ease;
+      object-fit: contain;
+    }
+  
+    .section__text img.icon {
+      margin: 0;
+      line-height: 0;
+    }
+    #contact{
+      margin-right: 50px;
+    }
+  }
+  
 }
   .hamburger {
     position: absolute;
